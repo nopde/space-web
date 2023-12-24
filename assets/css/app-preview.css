@@ -1,0 +1,298 @@
+.search-bar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    min-width: 200px;
+    min-height: 35px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    background-color: #172554;
+    transition: .25s ease;
+    color: inherit;
+    gap: 0;
+    -webkit-app-region: no-drag;
+}
+
+.search-bar:hover {
+    background-color: #1e3a8a;
+    border-color: #60a5fa;
+}
+
+.input {
+    flex: 1 1;
+    height: 35px;
+    outline: none;
+    background: transparent;
+    border: 0;
+    color: inherit;
+    -webkit-app-region: no-drag;
+}
+
+.input::placeholder {
+    color: #60a5fa;
+}
+
+.icon {
+    fill: #60a5fa;
+    height: 1rem;
+    padding-inline: 10px;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+}
+
+/* CONTAINERS */
+
+.title-bar {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: #131e36;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.btn.title-bar {
+    background-color: transparent;
+    border-radius: 0;
+    border: 0;
+}
+
+.btn.title-bar:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 0;
+}
+
+.btn.title-bar:active {
+    border: 0;
+}
+
+.controls {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #0f172a;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.space-list {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow: auto;
+}
+
+.space-card {
+    background-color: #172554;
+    border-radius: 7px;
+    padding: 10px;
+    padding-left: 15px;
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+    transition: .25s ease;
+}
+
+.space-card:hover {
+    background-color: #1e3a8a;
+    box-shadow: 0 0 10px #1e3a8a;
+}
+
+.space-card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex: 1 1;
+}
+
+.space-card-body-text {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: .25s ease;
+    flex: 1 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.space-card:hover .space-card-body-text {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.space-card-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.btn {
+    background-color: #172554;
+    color: #60a5fa;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    padding: 8px 10px;
+    transition: .25s ease;
+    cursor: pointer;
+    height: 35px;
+    -webkit-app-region: no-drag;
+    outline: none;
+}
+
+.btn:hover {
+    background-color: #1e3a8a;
+}
+
+.btn:active {
+    border: 1px solid #60a5fa;
+    transition: border 0s;
+}
+
+.btn.red {
+    background-color: #450a0a;
+    color: #f87171;
+}
+
+.btn.red:hover {
+    background-color: #7f1d1d;
+}
+
+.btn.red:active {
+    border: 1px solid #f87171;
+}
+
+.btn.green {
+    background-color: #1a2e05;
+    color: #a3e635;
+}
+
+.btn.green:hover {
+    background-color: #365314;
+}
+
+.btn.green:active {
+    border: 1px solid #a3e635;
+}
+
+.btn.yellow {
+    background-color: #422006;
+    color: #fbbf24;
+}
+
+.btn.yellow:hover {
+    background-color: #713f12;
+}
+
+.btn.yellow:active {
+    border: 1px solid #fbbf24;
+}
+
+.btn.transparent {
+    background-color: transparent;
+    color: var(--font-color);
+    border: 0;
+    transition: 0s;
+}
+
+.btn.transparent:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 100%;
+    color: black;
+}
+
+.logo::after {
+    content: "?";
+}
+
+/* TEST */
+
+dialog {
+    outline: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
+    background: transparent;
+    border: 0;
+}
+
+@keyframes test2 {
+    from {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    to {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+}
+
+dialog::backdrop {
+    animation: test2 .25s ease forwards;
+}
+
+@keyframes test {
+    from {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+dialog[open] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+dialog[open] .prompt {
+    animation: test .25s ease forwards;
+}
+
+.prompt {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 25px;
+    width: fit-content;
+    border-radius: 15px;
+    background-color: #0f172a;
+}
+
+.prompt-input {
+    padding: 10px;
+    outline: none;
+    background-color: #172554;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    transition: .25s ease;
+    -webkit-app-region: no-drag;
+}
+
+.prompt-input::placeholder {
+    color: #60a5fa;
+}
+
+menu {
+    display: flex;
+    gap: 10px;
+}
