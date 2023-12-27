@@ -55,6 +55,21 @@ input[type="search"]::-webkit-search-cancel-button {
     border-bottom: 1px solid var(--border-color);
 }
 
+.title-bar-content {
+    flex: 1 1;
+    display: flex;
+    gap: 10px;
+    padding-left: 10px;
+}
+
+.title-bar-preview-label {
+    background-color: #42200681;
+    color: #fbbf24;
+    box-shadow: 0 0 0 3px #42200681;
+    border-radius: 2px;
+    padding-inline: 2px;
+}
+
 .btn.title-bar {
     background-color: transparent;
     border-radius: 0;

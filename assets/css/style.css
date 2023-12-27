@@ -222,14 +222,31 @@ main {
 }
 
 @media (max-width: 800px) {
-    main {
-        display: none;
-    }
     .space-header {
         font-size: 52px;
-        margin: 0;
+        margin-top: 0;
+        margin-bottom: 50px;
     }
     .mf-cursor {
+        display: none;
+    }
+    .space-app-preview {
+        width: 90%;
+        max-width: 600px;
+    }
+    .space-app-preview .search-bar {
+        min-width: fit-content;
+    }
+    .space-app-preview .input {
+        display: none;
+    }
+}
+
+@media (max-width: 400px) {
+    .space-header {
+        margin: 0;
+    }
+    main {
         display: none;
     }
 }

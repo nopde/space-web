@@ -24,7 +24,8 @@
             Manage your <span class="gradient">projects</span>
         </p>
         <div class="container">
-            <a href="https://github.com/nopde/space-app/releases/latest" target="_blank" class="header white" data-cursor="-hidden">Download -></a>
+            <a href="https://github.com/nopde/space-app/releases/latest" target="_blank" class="header white"
+                data-cursor="-hidden">Download -></a>
             <button class="header" data-cursor="-hidden">Learn more</button>
         </div>
     </header>
@@ -33,7 +34,10 @@
         <div class="space-app-preview" data-cursor="-text" data-cursor-text="Preview">
             <header>
                 <div class="title-bar">
-                    <p style="flex: 1 1; padding-left: 10px;">Space</p>
+                    <div class="title-bar-content">
+                        <p>Space</p>
+                        <p class="title-bar-preview-label">Preview</p>
+                    </div>
                     <div style="display: flex;">
                         <button class="btn title-bar" id="minimize">—</button>
                         <button class="btn title-bar" id="quit" style="border-top-right-radius: 10px;">
@@ -114,7 +118,7 @@
         </div>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3.9.0/dist/gsap.min.js"></script>
     <script src="assets/js/webFunctions.js" type="module"></script>
 </body>
 
