@@ -219,6 +219,7 @@ main {
     flex-direction: column;
     background-color: #070b14;
     border-radius: 10px;
+    overflow: hidden;
 }
 
 @media (max-width: 800px) {
@@ -238,15 +239,6 @@ main {
         min-width: fit-content;
     }
     .space-app-preview .input {
-        display: none;
-    }
-}
-
-@media (max-width: 400px) {
-    .space-header {
-        margin: 0;
-    }
-    main {
         display: none;
     }
 }
