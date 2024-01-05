@@ -248,7 +248,6 @@ main section .container {
     border: 1px solid rgb(50, 50, 50);
     border-radius: 15px;
     padding: 25px;
-    backdrop-filter: blur(8px);
     min-width: 200px;
     min-height: 200px;
     display: flex;
