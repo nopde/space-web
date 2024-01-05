@@ -1,0 +1,6 @@
+{
+    "rewrites": [
+        { "source": "/home", "destination": "pages/home/index.html" },
+        { "source": "/components", "destination": "pages/components/index.html" }
+    ]
+}
