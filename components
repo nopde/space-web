@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space - Components</title>
+    <link rel="stylesheet" href="assets/css/components.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="title">
+                <a href="/" class="gradient">space</a>
+                <p>Components</p>
+            </div>
+        </header>
+
+        <main>
+            <div class="sidebar">
+                <a href="#button">Button</a>
+                <a href="#switch">Switch</a>
+                <a href="#badge">Badge</a>
+                <a href="#code-block">Code block</a>
+                <a href="#snippet">Snippet</a>
+            </div>
+
+            <section class="components">
+                <section id="button">
+                    <p>Button</p>
+
+                    <div class="container">
+                        <div class="component">
+                            <button class="default">Button</button>
+
+                            <div class="tooltip">Default</div>
+                        </div>
+
+                        <div class="component">
+                            <button class="white">Button</button>
+
+                            <div class="tooltip">White</div>
+                        </div>
+
+                        <div class="component">
+                            <button class="default arrow">Button</button>
+
+                            <div class="tooltip">Default with arrow</div>
+                        </div>
+
+                        <div class="component">
+                            <button class="white arrow">Button</button>
+
+                            <div class="tooltip">White with arrow</div>
+                        </div>
+
+                        <div class="component">
+                            <button class="default rounded">Button</button>
+
+                            <div class="tooltip">Default rounded</div>
+                        </div>
+
+                        <div class="component">
+                            <button class="white rounded">Button</button>
+
+                            <div class="tooltip">White rounded</div>
+                        </div>
+
+                        <div class="component">
+                            <button class="default arrow rounded">Button</button>
+
+                            <div class="tooltip">Default rounded with arrow</div>
+                        </div>
+
+                        <div class="component">
+                            <button class="white arrow rounded">Button</button>
+
+                            <div class="tooltip">White rounded with arrow</div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="switch">
+                    <p>Switch</p>
+
+                    <div class="container">
+                        <div class="component">
+                            <label class="switch">
+                                <input type="checkbox">
+                                <div class="switch-box">
+                                    <div class="switch"></div>
+                                </div>
+                                Switch
+                            </label>
+
+                            <div class="tooltip">Default</div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="badge">
+                    <p>Badge</p>
+
+                    <div class="container">
+                        <div class="component">
+                            <div class="badge">Badge</div>
+
+                            <div class="tooltip">Default</div>
+                        </div>
+
+                        <div class="component">
+                            <div class="badge arrow">Badge</div>
+
+                            <div class="tooltip">Default with arrow</div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="code-block">
+                    <p>Code block</p>
+
+                    <div class="container">
+                        <div class="component">
+                            <div class="code-block">
+                                <div class="title-bar">
+                                    <div class="title">Python</div>
+                                    <div class="copy">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
+                                            <path
+                                                d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1z" />
+                                            <path
+                                                d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0z" />
+                                        </svg>
+                                        <div class="copy-tooltip">Copy</div>
+                                    </div>
+                                </div>
+                                <pre>from random import randint<br><br>number = randint(0, 5)<br><br>print(number)</pre>
+                            </div>
+
+                            <div class="tooltip">Python</div>
+                        </div>
+
+                        <div class="component">
+                            <div class="code-block">
+                                <div class="title-bar">
+                                    <div class="title">CSS</div>
+                                    <div class="copy">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
+                                            <path
+                                                d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1z" />
+                                            <path
+                                                d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0z" />
+                                        </svg>
+                                        <div class="copy-tooltip">Copy</div>
+                                    </div>
+                                </div>
+                                <pre>button {<br>   outline: none;<br>   cursor: pointer;<br>   padding: 10px;<br>}</pre>
+                            </div>
+
+                            <div class="tooltip">CSS</div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="snippet">
+                    <p>Snippet</p>
+
+                    <div class="container">
+                        <div class="component">
+                            <div class="snippet">
+                                <div class="snippet-content">npm install --save-dev electron@latest</div>
+                            </div>
+
+                            <div class="tooltip">Default</div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </main>
+
+        <footer>
+            <div class="copyright">
+                <p>Copyright © 2023 Space Inc.</p>
+            </div>
+            <div class="links">
+                <button class="default rounded" onclick="window.scrollTo(0, 0)">Scroll top</button>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
